@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Inter";
+    src: url("/src/assets/fonts/inter/Inter-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/src/assets/fonts/inter/Inter-Italic.ttf") format("ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  .animate-scroll {
+    animation: scroll 60s linear infinite;
+  }
+
+  @media (min-width: 768px) {
+    .animate-scroll {
+      animation-duration: 50s;
+    }
+  }
+
+body {
+    font-family: "Inter", sans-serif;
+}
